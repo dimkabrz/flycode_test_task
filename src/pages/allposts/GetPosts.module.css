@@ -1,0 +1,14 @@
+.allPosts{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.post{
+    border: 1px solid #046c9a;
+    width: 250px;
+    height: 150px;
+    overflow: hidden;
+    margin: 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}

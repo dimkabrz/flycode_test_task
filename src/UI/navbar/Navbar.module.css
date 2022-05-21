@@ -1,0 +1,18 @@
+.Navbar{
+    width: 100%;
+    height: 70px;
+    background-color: #046c9a;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.Navbar_link{
+    text-decoration: none;
+    color: #010c1e;
+    font-size: 20px;
+    margin: 15px;
+}
+.Navbar_link:hover{
+    color: #93a7d0;
+}
