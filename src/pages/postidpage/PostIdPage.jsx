@@ -45,7 +45,10 @@ const PostIdPage = () => {
         <div className={classes.post}>
             <h3>ID поста-{post.id}</h3>
             <div>{post.text}</div>
-            <div>Дата создания: {date.toLocaleString()}</div>
+            <div>
+                Дата создания:
+                {post ? new Date(post.created_at).toLocaleString() : ''}
+            </div>
             {realUser && (
                 <form>
                     <MyInput
