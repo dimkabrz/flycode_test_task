@@ -1,12 +1,12 @@
-.navbarButton{
+.navbarButton {
     background-color: #046c9a;
     font-size: 20px;
     border: none;
     cursor: pointer;
     margin: 15px;
     padding-top: 3px;
-    font-family: "Times New Roman";
+    font-family: 'Times New Roman';
 }
-.navbarButton:hover{
+.navbarButton:hover {
     color: #93a7d0;
 }

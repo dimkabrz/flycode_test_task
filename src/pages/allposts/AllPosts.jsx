@@ -1,21 +1,20 @@
-import React, {useEffect, useState} from 'react';
-import axios from "axios";
-import GetPosts from "./GetPosts";
-
+import React, { useEffect, useState } from 'react';
+import GetPosts from './GetPosts';
+import api from '../../api';
 
 const AllPosts = () => {
+    const [posts, setPosts] = useState([]);
 
-    const [posts,setPosts]=useState([])
+    const getAllPost = async () => {
+        try {
+            const response = await api.getAllPost();
+            setPosts(response.data.reverse());
+        } catch {}
+    };
 
-
-    const getAllPost=async()=>{
-        try{const response=await axios.get('https://test.flcd.ru/api/post')
-            setPosts(response.data.reverse())
-        }
-        catch{}
-    }
-
-    useEffect(()=>{getAllPost()},[])
+    useEffect(() => {
+        getAllPost();
+    }, []);
 
     return (
         <div>
